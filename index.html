@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Private Home-Assistant-Anwendung für den autorisierten Finanzdatenabruf und Google-Drive-Export.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Startseite – HA Finanztransfer</title>
+<link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+<header><div class="container"><a class="logo" href="./"><strong>HA</strong> Finanztransfer</a><nav aria-label="Hauptnavigation">
+<a href="./" aria-current="page">Startseite</a>
+<a href="./datenschutz.html">Datenschutz</a>
+<a href="./nutzungsbedingungen.html">Nutzungsbedingungen</a>
+</nav></div></header>
+<main class="container">
+<section aria-labelledby="intro"><div class="eyebrow">Privates, nichtkommerzielles Softwareprojekt</div><h1 id="intro">Finanzdaten im eigenen System verarbeiten.</h1>
+<p class="lead">HA Finanztransfer unterstützt den autorisierten Abruf eigener Kontoumsätze, die Erstellung von CSV-Dateien und deren optionale Ablage im persönlichen Google Drive. Die Anwendung wird in der eigenen Home-Assistant-Installation betrieben.</p>
+<span class="tag">Keine öffentliche Registrierung · Kein Finanzdienst</span></section>
+<section class="panel"><h2>Was macht die Anwendung?</h2><ul>
+<li>Sie ruft nach gesonderter Freigabe Kontoumsatzdaten über eine angebundene Bankschnittstelle ab.</li>
+<li>Sie erstellt Dateien für die private Finanzübersicht und weitere persönliche Auswertungen.</li>
+<li>Sie kann diese Dateien mit gesonderter Google-Autorisierung in einem vom Nutzer bestimmten Google-Drive-Bereich ablegen.</li>
+<li>Der Betrieb der Finanzdatenverarbeitung erfolgt lokal in Home Assistant, nicht auf dieser Website.</li>
+</ul></section>
+<section><h2>Google-Drive-Berechtigung</h2><p>Die Anwendung verwendet Google OAuth zur Autorisierung. Vorgesehen ist die auf verwendete Dateien begrenzte Berechtigung <code>drive.file</code>. Bestehende Google-Drive-Dateien werden nur einbezogen, soweit sie für die Anwendung freigegeben sind. Der Nutzer kann seine Berechtigung jederzeit in den Google-Kontoeinstellungen widerrufen.</p>
+<p>Diese Website ist ausschließlich eine Informationsseite. Sie enthält keine Anmeldung, verarbeitet keine Kontoumsätze und nimmt keine OAuth-Rückgaben entgegen.</p></section>
+<section><h2>Informationen und Kontakt</h2><p>Wie personenbezogene Daten verwendet werden, steht in den <a href="./datenschutz.html">Datenschutzhinweisen</a>. Die <a href="./nutzungsbedingungen.html">Nutzungsbedingungen</a> erläutern die Grenzen der privaten Anwendung.</p>
+<p>Allgemeine Projektfragen können über <a href="https://github.com/m6w4z8tnz2-sketch/ha-finanztransfer-info/issues">GitHub Issues</a> gestellt werden. Dort bitte keine Bankdaten, Tokens, Kontonummern oder sonstigen vertraulichen Informationen veröffentlichen.</p></section>
+</main>
+<footer><div class="container"><span>HA Finanztransfer · Privates Softwareprojekt</span>
+<a href="./datenschutz.html">Datenschutz</a><a href="./nutzungsbedingungen.html">Nutzungsbedingungen</a>
+<a href="https://github.com/m6w4z8tnz2-sketch/ha-finanztransfer-info">GitHub-Projekt</a></div></footer>
+</body></html>
