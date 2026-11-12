@@ -4,54 +4,68 @@ Stand: 12.11.2026
 
 ## Bestätigter Stand
 
-- [Öffentliche Homepage](https://m6w4z8tnz2-sketch.github.io/ha-finanztransfer-info/) auf GitHub Pages; Branch `main`, Verzeichnis `/(root)`.
-- [Pages-Build vom 12.11.2026](https://github.com/m6w4z8tnz2-sketch/ha-finanztransfer-info/actions/runs/43240077156): **success**. Ein unabhängiger HTTP-Abruf der Live-Seite steht noch aus.
-- `ha-finanztransfer.is-a.dev` ist **noch nicht registriert**; die Datei `is-a-dev/register/domains/ha-finanztransfer.json` war beim öffentlichen Lookup nicht vorhanden.
-- Home Assistant, Banking-App, Google-OAuth-Client, Google Cloud und Tailscale-Callback bleiben unverändert.
+- GitHub-Pages-Website: https://m6w4z8tnz2-sketch.github.io/ha-finanztransfer-info/
+- Der [Pages-Build vom 12.11.2026](https://github.com/m6w4z8tnz2-sketch/ha-finanztransfer-info/actions/runs/43240077156) ist erfolgreich; ein unabhängiger HTTP-Abruf durch die Assistenz war technisch nicht möglich.
+- `ha-finanztransfer.is-a.dev` ist **noch nicht beantragt oder zugeteilt**. Im öffentlichen is-a.dev-Registrierungsrepository wurde am 12.11.2026 keine gleichnamige Domain-Datei gefunden.
+- Home Assistant, Banking-App, Google Cloud und Tailscale-Callback blieben unverändert.
 
-## 1. is-a.dev-Domain registrieren
+## 1. is-a.dev – manuelle Domainregistrierung
 
-Die einfachste Registrierung benötigt **zunächst nur einen CNAME** auf GitHub Pages; die Google-Verifizierung erfolgt später. Die vollständige, auf unseren GitHub-Namen abgestimmte Vorlage liegt in `domain/ha-finanztransfer.json.template`.
+**Verbindliche Anbieterregeln:** Die [Nutzungsbedingungen, Abschnitt 6](https://github.com/is-a-dev/register/blob/main/TERMS_OF_SERVICE.md) und [AGENTS.md](https://github.com/is-a-dev/register/blob/main/AGENTS.md) lehnen **KI-generierte Registrierungs-Pull-Requests** ausdrücklich ab. Deshalb darf die Assistenz weder die antragsbezogene Datei/Branch im Fork als fertigen Antrag erzeugen noch den PR für den Benutzer eröffnen. Der Kontoinhaber muss die Datei und den Antrag nach den [offiziellen Anleitungen](https://docs.is-a.dev/quickstart/) selbst erstellen und verstehen. Die nachfolgenden Werte sind **technische Fakten**, kein fertiger Einreichungstext.
 
-1. Die drei bestehenden Seiten im privaten Browser prüfen.
-2. https://github.com/is-a-dev/register öffnen und im eigenen GitHub-Konto auf **Fork** klicken.
-3. Im Fork `domains/ha-finanztransfer.json` erstellen und die Vorlage **persönlich prüfen und übernehmen**.
-4. Pull Request auf `is-a-dev/register` im Browser selbst erstellen, das dortige PR-Template ausfüllen, den öffentlichen Vorschaulink und einen selbst angefertigten Screenshot beifügen.
-5. Die Domain gilt erst nach Annahme des Antrags und Veröffentlichung der DNS-Daten als verfügbar.
-6. Danach unter [GitHub Pages](https://github.com/m6w4z8tnz2-sketch/ha-finanztransfer-info/settings/pages) als **Custom domain** `ha-finanztransfer.is-a.dev` eintragen und **Enforce HTTPS** aktivieren.
+### Vorgehen im iPhone-Browser
 
-**Achtung:** Die [is-a.dev-Nutzungsbedingungen](https://github.com/is-a-dev/register/blob/main/TERMS_OF_SERVICE.md) stehen KI-erstellten PRs ausdrücklich ablehnend gegenüber. Der Antrag muss deshalb vom Kontoinhaber selbst nach eigener Prüfung übermittelt werden; die technische Website darf dagegen mit KI erstellt worden sein.
+1. https://github.com/m6w4z8tnz2-sketch/register/tree/main/domains öffnen.
+2. **Add file → Create new file** wählen (bei mobiler Ansicht ggf. Safari → Desktop-Website anfordern).
+3. Dateinamen **`ha-finanztransfer.json`** festlegen. Direkt im Ordner `domains` anlegen.
+4. Das [offizielle Domain-JSON-Beispiel](https://docs.is-a.dev/quickstart/) persönlich übertragen und dabei eintragen:
+   - `owner.username`: `m6w4z8tnz2-sketch`
+   - `records.CNAME`: `m6w4z8tnz2-sketch.github.io`
+   - gemäß [PR-Template](https://github.com/is-a-dev/register/blob/main/.github/PULL_REQUEST_TEMPLATE.md) **ausreichende Kontaktdaten** im `owner`-Bereich ergänzen (z. B. eine bewusst öffentlich gemachte E-Mail-Adresse oder zulässige Plattformadresse). Ein GitHub-Benutzername allein wird möglicherweise nicht akzeptiert.
+5. Datei in **eigenem Fork** committen; dafür muss noch kein PR erstellt werden.
+6. Bei `is-a-dev/register` selbst einen PR eröffnen. Das **offizielle PR-Template vollständig** ausfüllen, die Vorschau-URL `https://m6w4z8tnz2-sketch.github.io/ha-finanztransfer-info/` sowie einen **selbst erstellten Screenshot** angeben. Keine Zugangsdaten einfügen.
+7. Auf die Entscheidung der ehrenamtlichen Maintainer warten; eventuelle Rückfragen persönlich beantworten.
 
-Quellen: https://docs.is-a.dev/quickstart/ und https://docs.is-a.dev/guides/github-pages/
+**Hinweis:** is-a.dev akzeptiert nur Websites, die hauptsächlich ein persönliches oder nichtkommerzielles Softwareprojekt darstellen. Der Betreiber entscheidet, ob diese Informationswebsite den Vorgaben genügt. Eine Zustimmung ist nicht garantiert.
+
+Nach Annahme und DNS-Verfügbarkeit in [GitHub-Pages-Einstellungen](https://github.com/m6w4z8tnz2-sketch/ha-finanztransfer-info/settings/pages) als Custom Domain `ha-finanztransfer.is-a.dev` eintragen und **Enforce HTTPS** aktivieren. Erst dann ist der Abruf der drei Seiten über die eigene Domain sinnvoll zu testen.
+
+Offizielle Nachweise:
+- https://docs.is-a.dev/quickstart/
+- https://docs.is-a.dev/domain-structure/
+- https://docs.is-a.dev/guides/github-pages/
+- https://github.com/is-a-dev/register/blob/main/.github/PULL_REQUEST_TEMPLATE.md
 
 ## 2. Google Search Console
 
-Nach aktiver Domain im Google-Konto des vorhandenen Cloud-Projekts https://search.google.com/search-console öffnen.
+Erst nach aktiver Domain im Google-Konto des bestehenden Cloud-Projekts https://search.google.com/search-console öffnen:
 
-1. **URL-Präfix** auswählen, `https://ha-finanztransfer.is-a.dev/` eingeben.
-2. Bestätigungsmethode **HTML-Tag** wählen und das `google-site-verification`-Meta-Tag bereitstellen. Das Tag ist ein öffentlicher Eigentumsnachweis, **kein Client-Secret**.
-3. Dieses Tag in den `<head>` von `index.html` übernehmen und nach GitHub-PR/Merge veröffentlichen. Danach in Search Console bestätigen.
-4. Das Tag dauerhaft erhalten. Falls Google ausdrücklich eine Domain-Property statt einer URL-Präfix-Property fordert, ist dafür eine zusätzliche **DNS-TXT-Bestätigung** mit Änderung beim Anbieter nötig.
+1. **URL-Präfix** wählen und `https://ha-finanztransfer.is-a.dev/` eintragen.
+2. Verifizierung durch **HTML-Meta-Tag** auswählen. Das `google-site-verification`-Tag ist ein öffentlicher Eigentumsnachweis, kein OAuth-Secret.
+3. Meta-Tag nach Prüfung über einen eigenen GitHub-PR im `<head>` von `index.html` eintragen und ausrollen.
+4. Erst danach in Search Console die Bestätigung auslösen. Das Meta-Tag dauerhaft belassen.
 
-Google: https://support.google.com/webmasters/answer/9008080
+Falls Google ausdrücklich eine Domain-Property verlangt, kann ein zusätzlicher DNS-TXT-Nachweis erforderlich werden.
 
-## 3. Google Auth Platform / Branding
+Quelle: https://support.google.com/webmasters/answer/9008080
 
-Erst wenn die Domain funktioniert und verifiziert ist:
+## 3. Google Auth Platform – Branding
+
+Nach funktionierender und bestätigter Domain:
 
 - Autorisierte Domain: `ha-finanztransfer.is-a.dev`
 - Homepage: `https://ha-finanztransfer.is-a.dev/`
 - Datenschutz: `https://ha-finanztransfer.is-a.dev/datenschutz.html`
 - Nutzungsbedingungen: `https://ha-finanztransfer.is-a.dev/nutzungsbedingungen.html`
 
-Zusätzlich sind alle registrierten OAuth-Redirect-Domains zu prüfen. Der bisherige lokale Callback `https://homeassistant.taild5d315.ts.net/local/ing_google_callback.html` kann von Google als **nicht selbst verifizierte** Domain beanstandet werden. Eine öffentliche Domain für die Homepage löst dieses Problem nicht automatisch.
-
-**Keine ungeprüfte OAuth-Redirect-Änderung auf statische GitHub Pages:** Übertragene `code`-Parameter könnten in den Hosting-Logs erscheinen. Eine sichere Weiterleitungsarchitektur ist ein separater, sicherheitskritischer Arbeitsschritt.
+Den bestehenden Google-OAuth-Redirect
+`https://homeassistant.taild5d315.ts.net/local/ing_google_callback.html`
+separat überprüfen. Die Domain `ts.net` gehört nicht zum Projekt und kann wegen fehlender Domainbestätigung zum Hindernis werden. **Keine ungeprüfte Umstellung auf eine öffentliche Callback-Seite**, die vertrauliche OAuth-Codes in Logs offenlegen könnte.
 
 Google: https://developers.google.com/identity/verification/authentication-verification
 
 ## Abnahmegrenzen
 
-Vor dem produktiven, unbeaufsichtigten Betrieb müssen die Domainbestätigung, Google-Veröffentlichung, sichere Callback-Architektur, Banking-Lesetest und Drive-Upload separat bestätigt werden. Niemals Bankdaten, Tokens, OAuth Client-Secrets oder private Schlüssel ins öffentliche Repository eintragen.
+Domainvergabe, Search-Console-Nachweis, Google-OAuth-Veröffentlichung und sichere Callback-Architektur sind noch nicht abgenommen. Produktive ING-Abrufe und Google-Drive-Uploads werden damit **nicht** freigeschaltet.
 
-**Keine Änderung an Home Assistant, kein Git Pull, Reload oder Neustart nötig.**
+**Für die reine Informationswebsite ist kein Git Pull, kein HA-Reload und kein Neustart nötig.**
